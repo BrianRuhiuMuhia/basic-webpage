@@ -1,0 +1,74 @@
+.Main{
+    width:100vw;
+    min-height:calc(100vh-(4rem));
+}
+.logo-sec{
+    width:50%;
+    max-width:600px;
+    min-width:300px;
+}
+section{
+    margin-bottom: 2em;
+}
+.main_image{
+    height:35rem;
+    background-image:url(../images/lion.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.cards{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap:2em;
+    column-gap: 2em;
+align-items: center;
+grid-template-rows: auto;
+}
+.card{
+    display:flex;
+    flex-direction: column;
+    background-color:white;
+    box-shadow:2px 2px 10px 5px whitesmoke,-2px -2px 10px 5px whitesmoke;
+    border-radius: 10px;
+    align-items: center;
+    height: 500px;;
+}
+.card-img{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:40%;
+    width:100%;
+}
+.card-body{
+    margin-top: 1em;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-inline:1em;
+    gap:1em;
+}
+.btn{
+    background-color: lime;
+    border:none;
+    width:150px;
+    height:50px;
+    color: white;
+border-radius: 10px;
+cursor: pointer;
+}
+.btn:hover{
+    background-color: limegreen;
+}
+@media screen and (max-width:1000px) {
+  .cards{
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+  }
+  .card{
+    margin-inline:2em;
+  }
+}

@@ -1,0 +1,17 @@
+nav{
+flex:2;
+display:flex;
+justify-content: flex-end;
+}
+ul{
+    list-style: none;
+    display:flex;
+    font-size: 1.2em;
+gap:4em;
+margin-right: 2em;
+}
+@media screen and (max-width:1000px) {
+    nav{
+        display:none;
+    }
+}

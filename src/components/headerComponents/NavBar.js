@@ -2,7 +2,7 @@ import "./navbar.css"
 export default function NavBar()
 {
     return(
-        <nav>
+        <nav className="wrapper">
         <ul>
             <li>Home</li>
             <li>About</li>
